@@ -112,18 +112,20 @@ function AvviaGioco(){
 
                 if(sceltaDifficolta === 100 && punteggio === 84){
 
-                    console.log("Hai Vinto!")
+                    document.getElementById("risultato").innerHTML = `<span class="ms-color-green">Hai Vinto!</span>`
+                    document.getElementById("punteggio").innerHTML = `Punteggio ${punteggio}`
 
                 }else if(sceltaDifficolta === 81 && punteggio === 65){
 
-                    console.log("Hai Vinto!")
+                    document.getElementById("risultato").innerHTML = `<span class="ms-color-green">Hai Vinto!</span>`
+                    document.getElementById("punteggio").innerHTML = `Punteggio ${punteggio}`
 
                 }else if(sceltaDifficolta === 49 && punteggio === 33){
 
-                    console.log("Hai Vinto!")
+                    document.getElementById("risultato").innerHTML = `<span class="ms-color-green">Hai Vinto!</span>`
+                    document.getElementById("punteggio").innerHTML = `Punteggio ${punteggio}`
 
                 }
-                
                 
             }
             

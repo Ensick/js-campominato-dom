@@ -69,6 +69,10 @@ h1{
 
 .ms-color{
 
-    color: red;
-    
+    color: red; 
+}
+
+.ms-color-green{
+
+    color: green;
 }
