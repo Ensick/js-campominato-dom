@@ -83,13 +83,15 @@ function AvviaGioco(){
 
     let divNelBox = document.querySelectorAll(".box-js")
 
+    let punteggio = 0
+
     for(k = 0; k < divNelBox.length; k++){
 
         let div = divNelBox[k]
 
         div.addEventListener('click' , function(){
-            
-     
+
+
             if(arrayNumeriRandom.includes(parseInt(div.innerHTML))){
                 
                 for(y = 0; y < divNelBox.length; y++){
@@ -97,29 +99,22 @@ function AvviaGioco(){
                     if(arrayNumeriRandom.includes((parseInt(divNelBox[y].innerText)))){
 
                         divNelBox[y].classList.add("ms-color-red")
-
-
+                        document.getElementById("risultato").innerText = `Hai Perso!`
+                        document.getElementById("punteggio").innerText = `Punteggio ${punteggio}`
                     }
                 }
     
             }else{
 
                 div.classList.add('ms-color-custom')
+                punteggio++
+                console.log(punteggio)
                 
             }
             
-       
         })
 
-       
-
-
     }
-
- 
-
-    /*  */
-
 
 }
 

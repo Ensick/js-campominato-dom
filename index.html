@@ -11,20 +11,26 @@
 <body>
     
     <header class="py-2 px-4 d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center">
+        
+        <div>
             <img src="./assets/img/mobile-logo.png" alt="logo">
-            <h1>Campo Minato</h1>
+            <h1 class="align-middle">Campo Minato</h1>
         </div>
 
         <div>
+            <span class="ms-color" id="risultato"></span>
+            <span id="punteggio"></span>
+        </div>
+        
 
+        <div class="ps-5">
             <select id="modalita">
                 <option value="1">Facile</option>
                 <option value="2">Normale</option>
                 <option value="3">Difficile</option>
             </select>
 
-            <button onclick="AvviaGioco()" class="btn btn-dark">Play</button>
+            <button onclick="AvviaGioco()" class="btn btn-dark ms-4">Play</button>
         </div>
     </header>
 

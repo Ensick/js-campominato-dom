@@ -12,7 +12,11 @@ main{
 }
 
 img{
-    width: 5%;
+    width: 50px;
+}
+
+h1{
+    display: inline-block;
 }
 
 .ms-pt-5{
@@ -61,4 +65,10 @@ img{
 .ms-color-red{
 
     background-color: red;
+}
+
+.ms-color{
+
+    color: red;
+    
 }
