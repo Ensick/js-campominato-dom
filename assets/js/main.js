@@ -40,7 +40,7 @@ function AvviaGioco(){
 
     let arrayNumeriRandom = []
 
-   /*  console.log(arrayNumeriRandom) */
+    console.log(arrayNumeriRandom)
 
     while( arrayNumeriRandom.length < 16 ){
 
@@ -109,6 +109,21 @@ function AvviaGioco(){
                 div.classList.add('ms-color-custom')
                 punteggio++
                 console.log(punteggio)
+
+                if(sceltaDifficolta === 100 && punteggio === 84){
+
+                    console.log("Hai Vinto!")
+
+                }else if(sceltaDifficolta === 81 && punteggio === 65){
+
+                    console.log("Hai Vinto!")
+
+                }else if(sceltaDifficolta === 49 && punteggio === 33){
+
+                    console.log("Hai Vinto!")
+
+                }
+                
                 
             }
             
