@@ -40,7 +40,7 @@ function AvviaGioco(){
 
     let arrayNumeriRandom = []
 
-    console.log(arrayNumeriRandom)
+   /*  console.log(arrayNumeriRandom) */
 
     while( arrayNumeriRandom.length < 16 ){
 
@@ -63,7 +63,7 @@ function AvviaGioco(){
 
         let divNuovo = document.createElement("div")
         divNuovo.classList.add("box-js")
-        divNuovo.innerText = `${x}`;
+        divNuovo.innerHTML = `${x}`;
 
         
         if(sceltaDifficolta == 81){
@@ -79,28 +79,47 @@ function AvviaGioco(){
         box.append(divNuovo)
 
 
-        divNuovo.addEventListener('click' , function(){
+    }
+
+    let divNelBox = document.querySelectorAll(".box-js")
+
+    for(k = 0; k < divNelBox.length; k++){
+
+        let div = divNelBox[k]
+
+        div.addEventListener('click' , function(){
             
-            this.classList.add('ms-color-custom')
-            console.log(this)
-            console.log(x);
+     
+            if(arrayNumeriRandom.includes(parseInt(div.innerHTML))){
+                
+                for(y = 0; y < divNelBox.length; y++){
+                    
+                    if(arrayNumeriRandom.includes((parseInt(divNelBox[y].innerText)))){
 
-           
-            if(arrayNumeriRandom.includes(x)){
+                        divNelBox[y].classList.add("ms-color-red")
 
-                for(k = 0; k < sceltaDifficolta; k++){
 
-                    divNuovo.classList.add('ms-color-red')
-                    console.log(this.innerHTML)
+                    }
                 }
+    
+            }else{
+
+                div.classList.add('ms-color-custom')
                 
             }
-
-         
-  
+            
+       
         })
-    
+
+       
+
+
     }
+
+ 
+
+    /*  */
+
 
 }
 
