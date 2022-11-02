@@ -1,0 +1,59 @@
+
+
+header,
+footer{
+    background-color: white;
+    height: 10vh;
+}
+
+main{
+    background-color: #7fffd4;
+    height: 80vh;
+}
+
+img{
+    width: 5%;
+}
+
+.ms-pt-5{
+
+    padding: 3rem 0;
+
+}
+
+.ms-fs-1{
+    font-size: 6rem;
+}
+
+#box{
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-js{
+    width: calc(100% / 10);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-color-custom{
+    background-color: #454545;
+    color: white;
+}
+
+.ms-w-normale{
+
+    width: calc(100% / 9);
+}
+
+
+.ms-w-difficile{
+
+    width: calc(100% / 7);
+}
